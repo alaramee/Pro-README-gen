@@ -21,9 +21,9 @@ const userQuestions = [
       }
     },
     {
-      type: "input",
-      name: "questions",
-      message: "What is your email address?",
+      type: 'input',
+      name: 'questions',
+      message: 'What is your email address?',
     },
     {
       type: 'input',
@@ -33,7 +33,7 @@ const userQuestions = [
         if (projectInput) {
           return true;
         } else {
-          console.log('You need to enter a project name!');
+          console.log('Please enter a project name!');
           return false;
         }
       }
@@ -41,43 +41,43 @@ const userQuestions = [
     {
       type: 'input',
       name: 'description',
-      message: 'Provide a description of your project (Required)',
+      message: 'Enter a description of your project (Required)',
       validate: descriptionInput => {
         if (descriptionInput) {
           return true;
         } else {
-          console.log('You need to enter a project description!');
+          console.log('Please enter a project description!');
           return false;
         }
       }
     },
     {
-      type: "input",
-      name: "installation",
-      message: "Installation instructions for your project: ",
-      default: "npm i"
+      type: 'input',
+      name: 'installation',
+      message: 'Installation instructions for your project:',
+      default: 'npm i'
     },
     {
-      type: "input",
-      name: "usage",
-      message: "Where do we run this repo? ",
+      type: 'input',
+      name: 'usage',
+      message: 'Where do we run this repo?',
     },
   {
-    type: "list",
-    name: "license",
-    message: "What license does your project have?",
-    choices: ["MIT", "APACHE2.0", "GPL3.0", "BSD2" , "Boost1.0", "None"]
+    type: 'list',
+    name: 'license',
+    message: 'What license does your project have?',
+    choices: ['MIT', 'APACHE2.0', 'GPL3.0', 'BSD2' , 'Boost1.0', 'None']
   },
   {
-    type: "input",
-    name: "contributing",
-    message: "Who contributed to this repository? "
+    type: 'input',
+    name: 'contributing',
+    message: 'Who has contributed to this repository?'
   },
   {
-    type: "input",
-    name: "test",
-    message: "Test instructions for your project: ",
-    default: "npm test"
+    type: 'input',
+    name: 'test',
+    message: 'Test instructions for your project:',
+    default: 'npm test'
   },
   ];
 
