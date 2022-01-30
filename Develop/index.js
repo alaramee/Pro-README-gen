@@ -87,7 +87,11 @@ function writeReadMe(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
-
+function init() {
+	inquirer.prompt(questions)
+        .then((data) => {
+		writeToFile('./dist/README.md', generateMarkdown(data))
+	})
+}
 // Function call to initialize app
 init();
